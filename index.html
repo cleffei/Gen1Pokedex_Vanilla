@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class = "nav-header">
+        <h1 class = "logo">POKÉMON RED/BLUE POKÉDEX</h1>
+        <input type="text" id="filter" class="form-control" placeholder="Search Pokémon...">
+    </header>
+
+    <main>
+        <div class="container">
+            <button class="btn"><img src="sprites/1.png" alt="Bulbasaur"></button>
+            <button class="btn"><img src="sprites/2.png" alt="Ivysaur"></button>
+            <button class="btn"><img src="sprites/3.png" alt="Venusaur"></button>
+            <button class="btn"><img src="sprites/4.png" alt="Charmander"></button>
+            <button class="btn"><img src="sprites/5.png" alt="Charmeleon"></button>
+            <button class="btn"><img src="sprites/6.png" alt="Charizard"></button>
+            <button class="btn"><img src="sprites/7.png" alt="Squirtle"></button>
+            <button class="btn"><img src="sprites/8.png" alt="Wartortle"></button>
+            <button class="btn"><img src="sprites/9.png" alt="Blastoise"></button>
+            <button class="btn"><img src="sprites/10.png" alt="Caterpie"></button>
+            <button class="btn"><img src="sprites/11.png" alt="Metapod"></button>
+            <button class="btn"><img src="sprites/12.png" alt="Butterfree"></button>
+            <button class="btn"><img src="sprites/13.png" alt="Weedle"></button>
+            <button class="btn"><img src="sprites/14.png" alt="Kakuna"></button>
+            <button class="btn"><img src="sprites/15.png" alt="Beedrill"></button>
+            <button class="btn"><img src="sprites/16.png" alt="Pidgey"></button>
+            <button class="btn"><img src="sprites/17.png" alt="Pidgeotto"></button>
+            <button class="btn"><img src="sprites/18.png" alt="Pidgeot"></button>
+            <button class="btn"><img src="sprites/19.png" alt="Rattata"></button>
+            <button class="btn"><img src="sprites/20.png" alt="Raticate"></button>
+            <button class="btn"><img src="sprites/21.png" alt="Spearow"></button>
+            <button class="btn"><img src="sprites/22.png" alt="Fearow"></button>
+            <button class="btn"><img src="sprites/23.png" alt="Ekans"></button>
+            <button class="btn"><img src="sprites/24.png" alt="Arbok"></button>
+            <button class="btn"><img src="sprites/25.png" alt="Pikachu"></button>
+            <button class="btn"><img src="sprites/26.png" alt="Raichu"></button>
+            <button class="btn"><img src="sprites/27.png" alt="Sandshrew"></button>
+            <button class="btn"><img src="sprites/28.png" alt="Sandslash"></button>
+            <button class="btn"><img src="sprites/29.png" alt="Nidoran♀"></button>
+            <button class="btn"><img src="sprites/30.png" alt="Nidorina"></button>
+            <button class="btn"><img src="sprites/31.png" alt="Nidoqueen"></button>
+            <button class="btn"><img src="sprites/32.png" alt="Nidoran♂"></button>
+            <button class="btn"><img src="sprites/33.png" alt="Nidorino"></button>
+            <button class="btn"><img src="sprites/34.png" alt="Nidoking"></button>
+            <button class="btn"><img src="sprites/35.png" alt="Clefairy"></button>
+            <button class="btn"><img src="sprites/36.png" alt="Clefable"></button>
+            <button class="btn"><img src="sprites/37.png" alt="Vulpix"></button>
+            <button class="btn"><img src="sprites/38.png" alt="Ninetales"></button>
+            <button class="btn"><img src="sprites/39.png" alt="Jigglypuff"></button>
+            <button class="btn"><img src="sprites/40.png" alt="Wigglytuff"></button>
+            <button class="btn"><img src="sprites/41.png" alt="Zubat"></button>
+            <button class="btn"><img src="sprites/42.png" alt="Golbat"></button>
+            <button class="btn"><img src="sprites/43.png" alt="Oddish"></button>
+            <button class="btn"><img src="sprites/44.png" alt="Gloom"></button>
+            <button class="btn"><img src="sprites/45.png" alt="Vileplume"></button>
+            <button class="btn"><img src="sprites/46.png" alt="Paras"></button>
+            <button class="btn"><img src="sprites/47.png" alt="Parasect"></button>
+            <button class="btn"><img src="sprites/48.png" alt="Venonat"></button>
+            <button class="btn"><img src="sprites/49.png" alt="Venomoth"></button>
+            <button class="btn"><img src="sprites/50.png" alt="Diglett"></button>
+            <button class="btn"><img src="sprites/51.png" alt="Dugtrio"></button>
+            <button class="btn"><img src="sprites/52.png" alt="Meowth"></button>
+            <button class="btn"><img src="sprites/53.png" alt="Persian"></button>
+            <button class="btn"><img src="sprites/54.png" alt="Psyduck"></button>
+            <button class="btn"><img src="sprites/55.png" alt="Golduck"></button>
+            <button class="btn"><img src="sprites/56.png" alt="Mankey"></button>
+            <button class="btn"><img src="sprites/57.png" alt="Primeape"></button>
+            <button class="btn"><img src="sprites/58.png" alt="Growlithe"></button>
+            <button class="btn"><img src="sprites/59.png" alt="Arcanine"></button>
+            <button class="btn"><img src="sprites/60.png" alt="Poliwag"></button>
+            <button class="btn"><img src="sprites/61.png" alt="Poliwhirl"></button>
+            <button class="btn"><img src="sprites/62.png" alt="Poliwrath"></button>
+            <button class="btn"><img src="sprites/63.png" alt="Abra"></button>
+            <button class="btn"><img src="sprites/64.png" alt="Kadabra"></button>
+            <button class="btn"><img src="sprites/65.png" alt="Alakazam"></button>
+            <button class="btn"><img src="sprites/66.png" alt="Machop"></button>
+            <button class="btn"><img src="sprites/67.png" alt="Machoke"></button>
+            <button class="btn"><img src="sprites/68.png" alt="Machamp"></button>
+            <button class="btn"><img src="sprites/69.png" alt="Bellsprout"></button>
+            <button class="btn"><img src="sprites/70.png" alt="Weepinbell"></button>
+            <button class="btn"><img src="sprites/71.png" alt="Victreebel"></button>
+            <button class="btn"><img src="sprites/72.png" alt="Tentacool"></button>
+            <button class="btn"><img src="sprites/73.png" alt="Tentacruel"></button>
+            <button class="btn"><img src="sprites/74.png" alt="Geodude"></button>
+            <button class="btn"><img src="sprites/75.png" alt="Graveler"></button>
+            <button class="btn"><img src="sprites/76.png" alt="Golem"></button>
+            <button class="btn"><img src="sprites/77.png" alt="Ponyta"></button>
+            <button class="btn"><img src="sprites/78.png" alt="Rapidash"></button>
+            <button class="btn"><img src="sprites/79.png" alt="Slowpoke"></button>
+            <button class="btn"><img src="sprites/80.png" alt="Slowbro"></button>
+            <button class="btn"><img src="sprites/81.png" alt="Magnemite"></button>
+            <button class="btn"><img src="sprites/82.png" alt="Magneton"></button>
+            <button class="btn"><img src="sprites/83.png" alt="Farfetch'd"></button>
+            <button class="btn"><img src="sprites/84.png" alt="Doduo"></button>
+            <button class="btn"><img src="sprites/85.png" alt="Dodrio"></button>
+            <button class="btn"><img src="sprites/86.png" alt="Seel"></button>
+            <button class="btn"><img src="sprites/87.png" alt="Dewgong"></button>
+            <button class="btn"><img src="sprites/88.png" alt="Grimer"></button>
+            <button class="btn"><img src="sprites/89.png" alt="Muk"></button>
+            <button class="btn"><img src="sprites/90.png" alt="Shellder"></button>
+            <button class="btn"><img src="sprites/91.png" alt="Cloyster"></button>
+            <button class="btn"><img src="sprites/92.png" alt="Gastly"></button>
+            <button class="btn"><img src="sprites/93.png" alt="Haunter"></button>
+            <button class="btn"><img src="sprites/94.png" alt="Gengar"></button>
+            <button class="btn"><img src="sprites/95.png" alt="Onix"></button>
+            <button class="btn"><img src="sprites/96.png" alt="Drowzee"></button>
+            <button class="btn"><img src="sprites/97.png" alt="Hypno"></button>
+            <button class="btn"><img src="sprites/98.png" alt="Krabby"></button>
+            <button class="btn"><img src="sprites/99.png" alt="Kingler"></button>
+            <button class="btn"><img src="sprites/100.png" alt="Voltorb"></button>
+            <button class="btn"><img src="sprites/101.png" alt="Electrode"></button>
+            <button class="btn"><img src="sprites/102.png" alt="Exeggcute"></button>
+            <button class="btn"><img src="sprites/103.png" alt="Exeggutor"></button>
+            <button class="btn"><img src="sprites/104.png" alt="Cubone"></button>
+            <button class="btn"><img src="sprites/105.png" alt="Marowak"></button>
+            <button class="btn"><img src="sprites/106.png" alt="Hitmonlee"></button>
+            <button class="btn"><img src="sprites/107.png" alt="Hitmonchan"></button>
+            <button class="btn"><img src="sprites/108.png" alt="Lickitung"></button>
+            <button class="btn"><img src="sprites/109.png" alt="Koffing"></button>
+            <button class="btn"><img src="sprites/110.png" alt="Weezing"></button>
+            <button class="btn"><img src="sprites/111.png" alt="Rhyhorn"></button>
+            <button class="btn"><img src="sprites/112.png" alt="Rhydon"></button>
+            <button class="btn"><img src="sprites/113.png" alt="Chansey"></button>
+            <button class="btn"><img src="sprites/114.png" alt="Tangela"></button>
+            <button class="btn"><img src="sprites/115.png" alt="Kangaskhan"></button>
+            <button class="btn"><img src="sprites/116.png" alt="Horsea"></button>
+            <button class="btn"><img src="sprites/117.png" alt="Seadra"></button>
+            <button class="btn"><img src="sprites/118.png" alt="Goldeen"></button>
+            <button class="btn"><img src="sprites/119.png" alt="Seaking"></button>
+            <button class="btn"><img src="sprites/120.png" alt="Staryu"></button>
+            <button class="btn"><img src="sprites/121.png" alt="Starmie"></button>
+            <button class="btn"><img src="sprites/122.png" alt="Mr. Mime"></button>
+            <button class="btn"><img src="sprites/123.png" alt="Scyther"></button>
+            <button class="btn"><img src="sprites/124.png" alt="Jynx"></button>
+            <button class="btn"><img src="sprites/125.png" alt="Electabuzz"></button>
+            <button class="btn"><img src="sprites/126.png" alt="Magmar"></button>
+            <button class="btn"><img src="sprites/127.png" alt="Pinsir"></button>
+            <button class="btn"><img src="sprites/128.png" alt="Tauros"></button>
+            <button class="btn"><img src="sprites/129.png" alt="Magikarp"></button>
+            <button class="btn"><img src="sprites/130.png" alt="Gyarados"></button>
+            <button class="btn"><img src="sprites/131.png" alt="Lapras"></button>
+            <button class="btn"><img src="sprites/132.png" alt="Ditto"></button>
+            <button class="btn"><img src="sprites/133.png" alt="Eevee"></button>
+            <button class="btn"><img src="sprites/134.png" alt="Vaporeon"></button>
+            <button class="btn"><img src="sprites/135.png" alt="Jolteon"></button>
+            <button class="btn"><img src="sprites/136.png" alt="Flareon"></button>
+            <button class="btn"><img src="sprites/137.png" alt="Porygon"></button>
+            <button class="btn"><img src="sprites/138.png" alt="Omanyte"></button>
+            <button class="btn"><img src="sprites/139.png" alt="Omastar"></button>
+            <button class="btn"><img src="sprites/140.png" alt="Kabuto"></button>
+            <button class="btn"><img src="sprites/141.png" alt="Kabutops"></button>
+            <button class="btn"><img src="sprites/142.png" alt="Aerodactyl"></button>
+            <button class="btn"><img src="sprites/143.png" alt="Snorlax"></button>
+            <button class="btn"><img src="sprites/144.png" alt="Articuno"></button>
+            <button class="btn"><img src="sprites/145.png" alt="Zapdos"></button>
+            <button class="btn"><img src="sprites/146.png" alt="Moltres"></button>
+            <button class="btn"><img src="sprites/147.png" alt="Dratini"></button>
+            <button class="btn"><img src="sprites/148.png" alt="Dragonair"></button>
+            <button class="btn"><img src="sprites/149.png" alt="Dragonite"></button>
+            <button class="btn"><img src="sprites/150.png" alt="Mewtwo"></button>
+            <button class="btn"><img src="sprites/151.png" alt="Mew"></button>
+        </div>
+
+        <div class="entries">
+            
+            <div class="dexcard" id="p1"> 
+                <header class="dexheader">
+                    <img src="sprites/1.png" id="spr1">
+                    <div class="p-stats">
+                        <p class="p-name">BULBASAUR</p>
+                        <p class="p-species">SEED</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  15.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A strange seed was planted on its back at birth. The plant sprouts and
+                    grows with this POKéMON.</p>
+            </div>
+
+            <div class="dexcard" id="p2">
+                <header class="dexheader">
+                    <img src="sprites/2.png" id="spr2">
+                    <div class="p-stats">
+                        <p class="p-name">IVYSAUR</p>
+                        <p class="p-species">SEED</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  29.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When the bulb on its back grows large, it appears to lose the ability
+                    to stand on its hind legs.</p>
+            </div>
+
+            <div class="dexcard" id="p3">
+                <header class="dexheader">
+                    <img src="sprites/3.png" id="spr3">
+                    <div class="p-stats">
+                        <p class="p-name">VENUSAUR</p>
+                        <p class="p-species">SEED</p>
+                        <p class="p-height">HT  6'07"</p>
+                        <p class="p-weight">WT  221.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The plant blooms when it is absorbing solar energy. It stays on the
+                    move to seek sunlight.</p>
+            </div>
+
+            <div class="dexcard" id="p4">
+                <header class="dexheader">
+                    <img src="sprites/4.png" id="spr4">
+                    <div class="p-stats">
+                        <p class="p-name">CHARMANDER</p>
+                        <p class="p-species">LIZARD</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  19.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Obviously prefers hot places. When it rains, steam is said to spout
+                    from the tip of its tail.</p>
+            </div>
+
+            <div class="dexcard" id="p5">
+                <header class="dexheader">
+                    <img src="sprites/5.png" id="spr5">
+                    <div class="p-stats">
+                        <p class="p-name">CHARMELEON</p>
+                        <p class="p-species">FLAME</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  42.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When it swings its burning tail, it elevates the temperature to
+                    unbearably high levels.</p>
+            </div>
+
+            <div class="dexcard" id="p6">
+                <header class="dexheader">
+                    <img src="sprites/6.png" id="spr6">
+                    <div class="p-stats">
+                        <p class="p-name">CHARIZARD</p>
+                        <p class="p-species">FLAME</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  200.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Spits fire that is hot enough to melt boulders. Known to cause forest
+                    fires unintentionally.</p>
+            </div>
+
+            <div class="dexcard" id="p7">
+                <header class="dexheader">
+                    <img src="sprites/7.png" id="spr7">
+                    <div class="p-stats">
+                        <p class="p-name">SQUIRTLE</p>
+                        <p class="p-species">TINYTURTLE</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  20.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">After birth, its back swells and hardens into a shell. Powerfully
+                    sprays foam from its mouth.</p>
+            </div>
+
+            <div class="dexcard" id="p8">
+                <header class="dexheader">
+                    <img src="sprites/8.png" id="spr8">
+                    <div class="p-stats">
+                        <p class="p-name">WARTORTLE</p>
+                        <p class="p-species">TURTLE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  50.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Often hides in water to stalk unwary prey. For swimming fast, it moves
+                    its ears to maintain balance.</p>
+            </div>
+
+            <div class="dexcard" id="p9">
+                <header class="dexheader">
+                    <img src="sprites/9.png" id="spr9">
+                    <div class="p-stats">
+                        <p class="p-name">BLASTOISE</p>
+                        <p class="p-species">SHELLFISH</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  189.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A brutal POKéMON with pressurized water jets on its shell. They are
+                    used for high speed tackles.</p>
+            </div>
+
+            <div class="dexcard" id="p10">
+                <header class="dexheader">
+                    <img src="sprites/10.png" id="spr10">
+                    <div class="p-stats">
+                        <p class="p-name">CATERPIE</p>
+                        <p class="p-species">WORM</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  6.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its short feet are tipped with suction pads that enable it to
+                    tirelessly climb slopes and walls.</p>
+            </div>
+
+            <div class="dexcard" id="p11">
+                <header class="dexheader">
+                    <img src="sprites/11.png" id="spr11">
+                    <div class="p-stats">
+                        <p class="p-name">METAPOD</p>
+                        <p class="p-species">COCOON</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  22.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">This POKéMON is vulnerable to attack while its shell is soft, exposing
+                    its weak and tender body.</p>
+            </div>
+
+            <div class="dexcard" id="p12">
+                <header class="dexheader">
+                    <img src="sprites/12.png" id="spr12">
+                    <div class="p-stats">
+                        <p class="p-name">BUTTERFREE</p>
+                        <p class="p-species">BUTTERFLY</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  71.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">In battle, it flaps its wings at high speed to release highly toxic
+                    dust into the air.</p>
+            </div>
+
+            <div class="dexcard" id="p13">
+                <header class="dexheader">
+                    <img src="sprites/13.png" id="spr13">
+                    <div class="p-stats">
+                        <p class="p-name">WEEDLE</p>
+                        <p class="p-species">HAIRY BUG</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  7.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Often found in forests, eating leaves. It has a sharp venomous stinger
+                    on its head.</p>
+            </div>
+
+            <div class="dexcard" id="p14">
+                <header class="dexheader">
+                    <img src="sprites/14.png" id="spr14">
+                    <div class="p-stats">
+                        <p class="p-name">KAKUNA</p>
+                        <p class="p-species">COCOON</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  22.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Almost incapable of moving, this POKéMON can only harden its shell
+                    to protect itself from predators.</p>
+            </div>
+
+            <div class="dexcard" id="p15">
+                <header class="dexheader">
+                    <img src="sprites/15.png" id="spr15">
+                    <div class="p-stats">
+                        <p class="p-name">BEEDRILL</p>
+                        <p class="p-species">POISON BEE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  65.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Flies at high speed and attacks using its large venomous stingers
+                    on its forelegs and tail.</p>
+            </div>
+
+            <div class="dexcard" id="p16">
+                <header class="dexheader">
+                    <img src="sprites/16.png" id="spr16">
+                    <div class="p-stats">
+                        <p class="p-name">PIDGEY</p>
+                        <p class="p-species">TINY BIRD</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  4.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A common sight in forests and woods. It flaps its wings at ground level
+                    to kick up blinding sand.</p>
+            </div>
+
+            <div class="dexcard" id="p17">
+                <header class="dexheader">
+                    <img src="sprites/17.png" id="spr17">
+                    <div class="p-stats">
+                        <p class="p-name">PIDGEOTTO</p>
+                        <p class="p-species">BIRD</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Very protective of its sprawling territorial area, this POKéMON will
+                    fiercely peck at any intruder.</p>
+            </div>
+
+            <div class="dexcard" id="p18">
+                <header class="dexheader">
+                    <img src="sprites/18.png" id="spr18">
+                    <div class="p-stats">
+                        <p class="p-name">PIDGEOT</p>
+                        <p class="p-species">BIRD</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  87.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When hunting, it skims the surface of water at high speed to pick off
+                    unwary prey such as MAGIKARP.</p>
+            </div>
+
+            <div class="dexcard" id="p19">
+                <header class="dexheader">
+                    <img src="sprites/19.png" id="spr19">
+                    <div class="p-stats">
+                        <p class="p-name">RATTATA</p>
+                        <p class="p-species">RAT</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  8.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Bites anything when it attacks. Small and very quick, it is a common
+                    sight in many places.
+           </p>
+            </div>
+
+            <div class="dexcard" id="p20">
+                <header class="dexheader">
+                    <img src="sprites/20.png" id="spr20">
+                    <div class="p-stats">
+                        <p class="p-name">RATICATE</p>
+                        <p class="p-species">RAT</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  41.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It uses its whiskers to maintain its balance. It apparently slows down
+                    if they are cut off.</p>
+            </div>
+
+            <div class="dexcard" id="p21">
+                <header class="dexheader">
+                    <img src="sprites/21.png" id="spr21">
+                    <div class="p-stats">
+                        <p class="p-name">SPEAROW</p>
+                        <p class="p-species">TINY BIRD</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  4.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Eats bugs in grassy areas. It has to flap its shorts wings at high
+                    speeds to stay airborne.</p>
+            </div>
+
+            <div class="dexcard" id="p22">
+                <header class="dexheader">
+                    <img src="sprites/22.png" id="spr22">
+                    <div class="p-stats">
+                        <p class="p-name">FEAROW</p>
+                        <p class="p-species">BEAK</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  84.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">With its huge and magnificent wings, it can keep aloft without ever
+                    having to land for rest.</p>
+            </div>
+
+            <div class="dexcard" id="p23">
+                <header class="dexheader">
+                    <img src="sprites/23.png" id="spr23">
+                    <div class="p-stats">
+                        <p class="p-name">EKANS</p>
+                        <p class="p-species">SNAKE</p>
+                        <p class="p-height">HT  6'07"</p>
+                        <p class="p-weight">WT  15.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY
+                    and SPEAROW, whole.</p>
+            </div>
+
+            <div class="dexcard" id="p24">
+                <header class="dexheader">
+                    <img src="sprites/24.png" id="spr24">
+                    <div class="p-stats">
+                        <p class="p-name">ARBOK</p>
+                        <p class="p-species">COBRA</p>
+                        <p class="p-height">HT  11'06"</p>
+                        <p class="p-weight">WT  143.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It is rumored that the ferocious warning markings on its belly differ
+                    from area to area.</p>
+            </div>
+
+            <div class="dexcard" id="p25">
+                <header class="dexheader">
+                    <img src="sprites/25.png" id="spr25">
+                    <div class="p-stats">
+                        <p class="p-name">PIKACHU</p>
+                        <p class="p-species">MOUSE</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  13.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When several of these POKéMON gather, their electricity could build and
+                    cause lightning storms.</p>
+            </div>
+
+            <div class="dexcard" id="p26">
+                <header class="dexheader">
+                    <img src="sprites/26.png" id="spr26">
+                    <div class="p-stats">
+                        <p class="p-name">RAICHU</p>
+                        <p class="p-species">MOUSE</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its long tail serves as a ground to protect itself from its own high
+                    voltage power.</p>
+            </div>
+
+            <div class="dexcard" id="p27">
+                <header class="dexheader">
+                    <img src="sprites/27.png" id="spr27">
+                    <div class="p-stats">
+                        <p class="p-name">SANDSHREW</p>
+                        <p class="p-species">MOUSE</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  26.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Burrows deep underground in arid locations far from water. It only
+                    emerges to hunt for food.</p>
+            </div>
+
+            <div class="dexcard" id="p28">
+                <header class="dexheader">
+                    <img src="sprites/28.png" id="spr28">
+                    <div class="p-stats">
+                        <p class="p-name">SANDSLASH</p>
+                        <p class="p-species">MOUSE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  65.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Curls up into a spiny ball when threatened. It can roll while curled up
+                    to attack or escape.</p>
+            </div>
+
+            <div class="dexcard" id="p29">
+                <header class="dexheader">
+                    <img src="sprites/29.png" id="spr29">
+                    <div class="p-stats">
+                        <p class="p-name">NIDORAN♀</p>
+                        <p class="p-species">POISON PIN</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  15.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Although small, its venomous barbs render this POKéMON dangerous.
+                    The female has smaller horns.</p>
+            </div>
+
+            <div class="dexcard" id="p30">
+                <header class="dexheader">
+                    <img src="sprites/30.png" id="spr30">
+                    <div class="p-stats">
+                        <p class="p-name">NIDORINA</p>
+                        <p class="p-species">POISON PIN</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  44.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The female's horn develops slowly. Prefers physical attacks such as
+                    clawing and biting.</p>
+            </div>
+
+            <div class="dexcard" id="p31">
+                <header class="dexheader">
+                    <img src="sprites/31.png" id="spr31">
+                    <div class="p-stats">
+                        <p class="p-name">NIDOQUEEN</p>
+                        <p class="p-species">DRILL</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  132.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its hard scales provide strong protection. It uses its hefty bulk to
+                    execute powerful moves.</p>
+            </div>
+
+            <div class="dexcard" id="p32">
+                <header class="dexheader">
+                    <img src="sprites/32.png" id="spr32">
+                    <div class="p-stats">
+                        <p class="p-name">NIDORAN♂</p>
+                        <p class="p-species">POISON PIN</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  20.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Stiffens its ears to sense danger. The larger its horns, the more
+                    powerful its secreted venom.</p>
+            </div>
+
+            <div class="dexcard" id="p33">
+                <header class="dexheader">
+                    <img src="sprites/33.png" id="spr33">
+                    <div class="p-stats">
+                        <p class="p-name">NIDORINO</p>
+                        <p class="p-species">POISON PIN</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  43.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">An aggressive POKéMON that is quick to attack. The horn on its head
+                    secretes a powerful venom.</p>
+            </div>
+
+            <div class="dexcard" id="p34">
+                <header class="dexheader">
+                    <img src="sprites/34.png" id="spr34">
+                    <div class="p-stats">
+                        <p class="p-name">NIDOKING</p>
+                        <p class="p-species">DRILL</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  137.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It uses its powerful tail in battle to smash, constrict, then break
+                    the prey's bones.</p>
+            </div>
+
+            <div class="dexcard" id="p35">
+                <header class="dexheader">
+                    <img src="sprites/35.png" id="spr35">
+                    <div class="p-stats">
+                        <p class="p-name">CLEFAIRY</p>
+                        <p class="p-species">FAIRY</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  17.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its magical and cute appeal has many admirers. It is rare and found
+                    only in certain areas.</p>
+            </div>
+
+            <!-- <div class="dexcard" id="p">
+                <img src="" id="spr">
+                <p class="p-name"></p>
+                <p class="p-species"></p>
+                <p class="p-height"></p>
+                <p class="p-weight"></p>
+                <p class="p-dexentry"></p>
+            </div> -->
+
+            <div class="dexcard" id="p36">
+                <header class="dexheader">
+                    <img src="sprites/36.png" id="spr36">
+                    <div class="p-stats">
+                        <p class="p-name">CLEFABLE</p>
+                        <p class="p-species">FAIRY</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  88.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A timid fairy POKéMON that is rarely seen. It will run and hide
+                    the moment it senses people.</p>
+            </div>
+
+            <div class="dexcard" id="p37">
+                <header class="dexheader">
+                    <img src="sprites/37.png" id="spr37">
+                    <div class="p-stats">
+                        <p class="p-name">VULPIX</p>
+                        <p class="p-species">FOX</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  22.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">At the time of birth, it has just one tail. The tail splits from its
+                    tip as it grows older.
+           </p>
+            </div>
+
+            <div class="dexcard" id="p38">
+                <header class="dexheader">
+                    <img src="sprites/38.png" id="spr38">
+                    <div class="p-stats">
+                        <p class="p-name">NINETALES</p>
+                        <p class="p-species">FOX</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  44.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Very smart and very vengeful. Grabbing one of its many tails could
+                    result in a 1000-year curse.</p>
+            </div>
+
+            <div class="dexcard" id="p39">
+                <header class="dexheader">
+                    <img src="sprites/39.png" id="spr39">
+                    <div class="p-stats">
+                        <p class="p-name">JIGGLYPUFF</p>
+                        <p class="p-species">BALLOON</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  12.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When its huge eyes light up, it sings a mysterious soothing melody that
+                    lulls its enemies to sleep.</p>
+            </div>
+
+            <div class="dexcard" id="p40">
+                <header class="dexheader">
+                    <img src="sprites/40.png" id="spr40">
+                    <div class="p-stats">
+                        <p class="p-name">WIGGLYTUFF</p>
+                        <p class="p-species">BALLOON</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  26.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The body is soft and rubbery. When angered, it will suck in air and
+                    inflate itself to an enormous size.</p>
+            </div>
+
+            <div class="dexcard" id="p41">
+                <header class="dexheader">
+                    <img src="sprites/41.png" id="spr41">
+                    <div class="p-stats">
+                        <p class="p-name">ZUBAT</p>
+                        <p class="p-species">BAT</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  17.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Forms colonies in perpetually dark places. Uses ultrasonic waves to
+                    identify and approach targets.</p>
+            </div>
+
+            <div class="dexcard" id="p42">
+                <header class="dexheader">
+                    <img src="sprites/42.png" id="spr42">
+                    <div class="p-stats">
+                        <p class="p-name">GOLBAT</p>
+                        <p class="p-species">BAT</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  121.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Once it strikes, it will not stop draining energy from the victim
+                    even if it gets too heavy to fly.</p>
+            </div>
+
+            <div class="dexcard" id="p43">
+                <header class="dexheader">
+                    <img src="sprites/43.png" id="spr43">
+                    <div class="p-stats">
+                        <p class="p-name">ODDISH</p>
+                        <p class="p-species">WEED</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  12.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">During the day, it keeps its face buried in the ground. At night,
+                    it wanders around sowing its seeds.</p>
+            </div>
+
+            <div class="dexcard" id="p44">
+                <header class="dexheader">
+                    <img src="sprites/44.png" id="spr44">
+                    <div class="p-stats">
+                        <p class="p-name">GLOOM</p>
+                        <p class="p-species">WEED</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  19.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The fluid that oozes from its mouth isn't drool. It is a nectar that is
+                    used to attract prey.</p>
+            </div>
+
+            <div class="dexcard" id="p45">
+                <header class="dexheader">
+                    <img src="sprites/45.png" id="spr45">
+                    <div class="p-stats">
+                        <p class="p-name">VILEPLUME</p>
+                        <p class="p-species">FLOWER</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  41.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The larger its petals, the more toxic pollen it contains. Its big head
+                    is heavy and hard to hold up.</p>
+            </div>
+
+            <div class="dexcard" id="p46">
+                <header class="dexheader">
+                    <img src="sprites/46.png" id="spr46">
+                    <div class="p-stats">
+                        <p class="p-name">PARAS</p>
+                        <p class="p-species">MUSHROOM</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  12.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Burrows to suck tree roots. The mushrooms on its back grow by drawing
+                    nutrients from the bug host.</p>
+            </div>
+
+            <div class="dexcard" id="p47">
+                <header class="dexheader">
+                    <img src="sprites/47.png" id="spr47">
+                    <div class="p-stats">
+                        <p class="p-name">PARASECT</p>
+                        <p class="p-species">MUSHROOM</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  65.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A host-parasite pair in which the parasite mushroom has taken over the
+                    host bug. Prefers damp places.</p>
+            </div>
+
+            <div class="dexcard" id="p48">
+                <header class="dexheader">
+                    <img src="sprites/48.png" id="spr48">
+                    <div class="p-stats">
+                        <p class="p-name">VENONAT</p>
+                        <p class="p-species">INSECT</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Lives in the shadows of tall trees where it eats insects. It is
+                    attracted by light at night.</p>
+            </div>
+
+            <div class="dexcard" id="p49">
+                <header class="dexheader">
+                    <img src="sprites/49.png" id="spr49">
+                    <div class="p-stats">
+                        <p class="p-name">VENOMOTH</p>
+                        <p class="p-species">POISONMOTH</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  28.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The dust-like scales covering its wings are color coded to indicate the
+                    kinds of poison it has.
+           </p>
+            </div>
+
+            <div class="dexcard" id="p50">
+                <header class="dexheader">
+                    <img src="sprites/50.png" id="spr50">
+                    <div class="p-stats">
+                        <p class="p-name">DIGLETT</p>
+                        <p class="p-species">MOLE</p>
+                        <p class="p-height">HT  0'08"</p>
+                        <p class="p-weight">WT  2.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Lives about one yard underground where it feeds on plant roots.
+                    It sometimes appears above ground.</p>
+            </div>
+
+            <div class="dexcard" id="p51">
+                <header class="dexheader">
+                    <img src="sprites/51.png" id="spr51">
+                    <div class="p-stats">
+                        <p class="p-name">DUGTRIO</p>
+                        <p class="p-species">MOLE</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  73.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A team of DIGLETT triplets. It triggers huge earthquakes by burrowing
+                    60 miles underground.</p>
+            </div>
+
+            <div class="dexcard" id="p52">
+                <header class="dexheader">
+                    <img src="sprites/52.png" id="spr52">
+                    <div class="p-stats">
+                        <p class="p-name">MEOWTH</p>
+                        <p class="p-species">SCRATCHCAT</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  9.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Adores circular objects. Wanders the streets on a nightly basis to look
+                    for dropped loose change.</p>
+            </div>
+
+            <div class="dexcard" id="p53">
+                <header class="dexheader">
+                    <img src="sprites/53.png" id="spr53">
+                    <div class="p-stats">
+                        <p class="p-name">PERSIAN</p>
+                        <p class="p-species">CLASSY CAT</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  71.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Although its fur has many admirers, it is tough to raise as a pet
+                    because of its fickle meanness.</p>
+            </div>
+
+            <div class="dexcard" id="p54">
+                <header class="dexheader">
+                    <img src="sprites/54.png" id="spr54">
+                    <div class="p-stats">
+                        <p class="p-name">PSYDUCK</p>
+                        <p class="p-species">DUCK</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  43.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">While lulling its enemies with its vacant look, this wily POKéMON will
+                    use psychokinetic powers.</p>
+            </div>
+
+            <div class="dexcard" id="p55">
+                <header class="dexheader">
+                    <img src="sprites/55.png" id="spr55">
+                    <div class="p-stats">
+                        <p class="p-name">GOLDUCK</p>
+                        <p class="p-species">DUCK</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  169.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Often seen swimming elegantly by lake shores. It is often mistaken for
+                    the Japanese monster, Kappa.</p>
+            </div>
+
+            <div class="dexcard" id="p56">
+                <header class="dexheader">
+                    <img src="sprites/56.png" id="spr56">
+                    <div class="p-stats">
+                        <p class="p-name">MANKEY</p>
+                        <p class="p-species">PIG MONKEY</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  62.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Extremely quick to anger. It could be docile one moment then thrashing
+                    away the next instant.</p>
+            </div>
+
+            <div class="dexcard" id="p57">
+                <header class="dexheader">
+                    <img src="sprites/57.png" id="spr57">
+                    <div class="p-stats">
+                        <p class="p-name">PRIMEAPE</p>
+                        <p class="p-species">PIG MONKEY</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  71.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Always furious and tenacious to boot. It will not abandon chasing its
+                    quarry until it is caught.</p>
+            </div>
+
+            <div class="dexcard" id="p58">
+                <header class="dexheader">
+                    <img src="sprites/58.png" id="spr58">
+                    <div class="p-stats">
+                        <p class="p-name">GROWLITHE</p>
+                        <p class="p-species">PUPPY</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  42.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Very protective of its territory. It will bark and bite to repel
+                    intruders from its space.</p>
+            </div>
+
+            <div class="dexcard" id="p59">
+                <header class="dexheader">
+                    <img src="sprites/59.png" id="spr59">
+                    <div class="p-stats">
+                        <p class="p-name">ARCANINE</p>
+                        <p class="p-species">LEGENDARY</p>
+                        <p class="p-height">HT  6'03"</p>
+                        <p class="p-weight">WT  342.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A POKéMON that has been admired since the past for its beauty.
+                    It runs agilely as if on wings.</p>
+            </div>
+
+            <div class="dexcard" id="p60">
+                <header class="dexheader">
+                    <img src="sprites/60.png" id="spr60">
+                    <div class="p-stats">
+                        <p class="p-name">POLIWAG</p>
+                        <p class="p-species">TADPOLE</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  27.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its newly grown legs prevent it from running. It appears to prefer
+                    swimming than trying to stand.</p>
+            </div>
+
+            <div class="dexcard" id="p61">
+                <header class="dexheader">
+                    <img src="sprites/61.png" id="spr61">
+                    <div class="p-stats">
+                        <p class="p-name">POLIWHIRL</p>
+                        <p class="p-species">TADPOLE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  44.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Capable of living in or out of water. When out of water, it sweats to
+                    keep its body slimy.</p>
+            </div>
+
+            <div class="dexcard" id="p62">
+                <header class="dexheader">
+                    <img src="sprites/62.png" id="spr62">
+                    <div class="p-stats">
+                        <p class="p-name">POLIWRATH</p>
+                        <p class="p-species">TADPOLE</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  119.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">An adept swimmer at both the front crawl and breast stroke.
+                    Easily overtakes the best human swimmers.</p>
+            </div>
+
+            <div class="dexcard" id="p63">
+                <header class="dexheader">
+                    <img src="sprites/63.png" id="spr63">
+                    <div class="p-stats">
+                        <p class="p-name">ABRA</p>
+                        <p class="p-species">PSI</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  43.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Using its ability to read minds, it will identify impending danger and
+                    TELEPORT to safety.</p>
+            </div>
+
+            <div class="dexcard" id="p64">
+                <header class="dexheader">
+                    <img src="sprites/64.png" id="spr64">
+                    <div class="p-stats">
+                        <p class="p-name">KADABRA</p>
+                        <p class="p-species">PSI</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  125.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It emits special alpha waves from its body that induce headaches
+                    just by being close by.</p>
+            </div>
+
+            <div class="dexcard" id="p65">
+                <header class="dexheader">
+                    <img src="sprites/65.png" id="spr65">
+                    <div class="p-stats">
+                        <p class="p-name">ALAKAZAM</p>
+                        <p class="p-species">PSI</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  106.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its brain can out-perform a supercomputer. Its intelligence quotient is
+                    said to be 5,000.</p>
+            </div>
+
+            <div class="dexcard" id="p66">
+                <header class="dexheader">
+                    <img src="sprites/66.png" id="spr66">
+                    <div class="p-stats">
+                        <p class="p-name">MACHOP</p>
+                        <p class="p-species">SUPERPOWER</p>
+                        <p class="p-height">HT  2'7"</p>
+                        <p class="p-weight">WT  43.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Loves to build its muscles. It trains in all styles of martial arts
+                    to become even stronger.</p>
+            </div>
+
+            <div class="dexcard" id="p67">
+                <header class="dexheader">
+                    <img src="sprites/67.png" id="spr67">
+                    <div class="p-stats">
+                        <p class="p-name">MACHOKE</p>
+                        <p class="p-species">SUPERPOWER</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  155.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its muscular body is so powerful, it must wear a power save belt to be
+                    able to regulate its motions.</p>
+            </div>
+
+            <div class="dexcard" id="p68">
+                <header class="dexheader">
+                    <img src="sprites/68.png" id="spr68">
+                    <div class="p-stats">
+                        <p class="p-name">MACHAMP</p>
+                        <p class="p-species">SUPERPOWER</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  287.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Using its heavy muscles, it throws powerful punches that can send the
+                    victim clear over the horizon.</p>
+            </div>
+
+            <div class="dexcard" id="p69">
+                <header class="dexheader">
+                    <img src="sprites/69.png" id="spr69">
+                    <div class="p-stats">
+                        <p class="p-name">BELLSPROUT</p>
+                        <p class="p-species">FLOWER</p>
+                        <p class="p-height">HT  2'04"</p>
+                        <p class="p-weight">WT  9.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A carnivorous POKéMON that traps and eats bugs. It uses its root feet
+                    to soak up needed moisture.</p>
+            </div>
+
+            <div class="dexcard" id="p70">
+                <header class="dexheader">
+                    <img src="sprites/70.png" id="spr70">
+                    <div class="p-stats">
+                        <p class="p-name">WEEPINBELL</p>
+                        <p class="p-species">FLYCATCHER</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  14.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It spits out POISONPOWDER to immobilize the enemy and then finishes it
+                    with a spray of ACID.</p>
+            </div>
+
+            <div class="dexcard" id="p71">
+                <header class="dexheader">
+                    <img src="sprites/71.png" id="spr">
+                    <div class="p-stats">
+                        <p class="p-name">VICTREEBEL</p>
+                        <p class="p-species">FLYCATCHER</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  34.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Said to live in huge colonies deep in jungles, although no one has ever
+                    returned from there.</p>
+            </div>
+
+            <div class="dexcard" id="p72">
+                <header class="dexheader">
+                    <img src="sprites/72.png" id="spr72">
+                    <div class="p-stats">
+                        <p class="p-name">TENTACOOL</p>
+                        <p class="p-species">JELLYFISH</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  100.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Drifts in shallow seas. Anglers who hook them by accident are often
+                    punished by its stinging acid.</p>
+            </div>
+
+            <div class="dexcard" id="p73">
+                <header class="dexheader">
+                    <img src="sprites/73.png" id="spr73">
+                    <div class="p-stats">
+                        <p class="p-name">TENTACRUEL</p>
+                        <p class="p-species">JELLYFISH</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  121.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The tentacles are normally kept short. On hunts, they are extended to
+                    ensnare and immobilize prey.</p>
+            </div>
+
+            <div class="dexcard" id="p74">
+                <header class="dexheader">
+                    <img src="sprites/74.png" id="spr74">
+                    <div class="p-stats">
+                        <p class="p-name">GEODUDE</p>
+                        <p class="p-species">ROCK</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  44.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Found in fields and mountains. Mistaking them for boulders, people
+                    often step or trip on them.</p>
+            </div>
+
+            <div class="dexcard" id="p75">
+                <header class="dexheader">
+                    <img src="sprites/75.png" id="spr75">
+                    <div class="p-stats">
+                        <p class="p-name">GRAVELER</p>
+                        <p class="p-species">ROCK</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  232.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Rolls down slopes to move. It rolls over any obstacle without slowing
+                    or changing its direction.</p>
+            </div>
+
+            <div class="dexcard" id="p76">
+                <header class="dexheader">
+                    <img src="sprites/76.png" id="spr76">
+                    <div class="p-stats">
+                        <p class="p-name">GOLEM</p>
+                        <p class="p-species">MEGATON</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  662.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its boulder-like body is extremely hard. It can easily withstand
+                    dynamite blasts without damage.</p>
+            </div>
+
+            <div class="dexcard" id="p77">
+                <header class="dexheader">
+                    <img src="sprites/77.png" id="spr77">
+                    <div class="p-stats">
+                        <p class="p-name">PONYTA</p>
+                        <p class="p-species">FIRE HORSE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its hooves are 10 times harder than diamonds. It can trample anything
+                    completely flat in little time.</p>
+            </div>
+
+            <div class="dexcard" id="p78">
+                <header class="dexheader">
+                    <img src="sprites/78.png" id="spr78">
+                    <div class="p-stats">
+                        <p class="p-name">RAPIDASH</p>
+                        <p class="p-species">FIRE HORSE</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  209.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Very competitive, this POKéMON will chase anything that moves fast
+                    in the hopes of racing it.</p>
+            </div>
+
+            <div class="dexcard" id="p79">
+                <header class="dexheader">
+                    <img src="sprites/79.png" id="spr79">
+                    <div class="p-stats">
+                        <p class="p-name">SLOWPOKE</p>
+                        <p class="p-species">DOPEY</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  79.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Incredibly slow and dopey. It takes 5 seconds for it to feel pain
+                    when under attack.</p>
+            </div>
+
+            <div class="dexcard" id="p80">
+                <header class="dexheader">
+                    <img src="sprites/80.png" id="spr80">
+                    <div class="p-stats">
+                        <p class="p-name">SLOWBRO</p>
+                        <p class="p-species">HERMITCRAB</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  173.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on
+                    the host's left over scraps.</p>
+            </div>
+
+            <div class="dexcard" id="p81">
+                <header class="dexheader">
+                    <img src="sprites/81.png" id="spr81">
+                    <div class="p-stats">
+                        <p class="p-name">MAGNEMITE</p>
+                        <p class="p-species">MAGNET</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  13.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Uses anti-gravity to stay suspended. Appears without warning and uses
+                    THUNDER WAVE and similar moves.</p>
+            </div>
+
+            <div class="dexcard" id="p82">
+                <header class="dexheader">
+                    <img src="sprites/82.png" id="spr82">
+                    <div class="p-stats">
+                        <p class="p-name">MAGNETON</p>
+                        <p class="p-species">MAGNET</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  132.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Formed by several MAGNEMITEs linked together. They frequently appear
+                    when sunspots flare up.</p>
+            </div>
+
+            <div class="dexcard" id="p83">
+                <header class="dexheader">
+                    <img src="sprites/83.png" id="spr83">
+                    <div class="p-stats">
+                        <p class="p-name">FARFETCH'D</p>
+                        <p class="p-species">WILD DUCK</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  33.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The sprig of green onions it holds is its weapon. It is used much like
+                    a metal sword.</p>
+            </div>
+
+            <div class="dexcard" id="p84">
+                <header class="dexheader">
+                    <img src="sprites/84.png" id="spr84">
+                    <div class="p-stats">
+                        <p class="p-name">DODUO</p>
+                        <p class="p-species">TWIN BIRD</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  86.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A bird that makes up for its poor flying with its fast food speed.
+                    Leaves giant footprints.</p>
+            </div>
+
+            <div class="dexcard" id="p85">
+                <header class="dexheader">
+                    <img src="sprites/85.png" id="spr85">
+                    <div class="p-stats">
+                        <p class="p-name">DODRIO</p>
+                        <p class="p-species">TRIPLEBIRD</p>
+                        <p class="p-height">HT  5'11"</p>
+                        <p class="p-weight">WT  188.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Uses its three brains to execute complex plans. While two heads sleep,
+                    one head stays awake.</p>
+            </div>
+
+            <div class="dexcard" id="p86">
+                <header class="dexheader">
+                    <img src="sprites/86.png" id="spr86">
+                    <div class="p-stats">
+                        <p class="p-name">SEEL</p>
+                        <p class="p-species">SEA LION</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  198.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The protruding horn on its head is very hard. It is used for bashing
+                    through thick ice.</p>
+            </div>
+
+            <div class="dexcard" id="p87">
+                <header class="dexheader">
+                    <img src="sprites/87.png" id="spr87">
+                    <div class="p-stats">
+                        <p class="p-name">DEWGONG</p>
+                        <p class="p-species">SEA LION</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  265.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Stores thermal energy in its body. Swims at a steady 8 knots even in
+                    intensely cold waters.</p>
+            </div>
+
+            <div class="dexcard" id="p88">
+                <header class="dexheader">
+                    <img src="sprites/88.png" id="spr88">
+                    <div class="p-stats">
+                        <p class="p-name">GRIMER</p>
+                        <p class="p-species">SLUDGE</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Appears in filthy areas. Thrives by sucking up polluted sludge that is
+                    pumped out of factories.</p>
+            </div>
+            <div class="dexcard" id="p89">
+                <header class="dexheader">
+                    <img src="sprites/89.png" id="spr89">
+                    <div class="p-stats">
+                        <p class="p-name">MUK</p>
+                        <p class="p-species">SLUDGE</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Thickly covered with a filthy, vile sludge. It is so toxic, even its
+                    footprints contain poison.</p>
+            </div>
+            <div class="dexcard" id="p90">
+                <header class="dexheader">
+                    <img src="sprites/90.png" id="spr90">
+                    <div class="p-stats">
+                        <p class="p-name">SHELLDER</p>
+                        <p class="p-species">BIVALVE</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  9.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its hard shell repels any kind of attack. It is vulnerable only when
+                    its shell is open.</p>
+            </div>
+            <div class="dexcard" id="p91">
+                <header class="dexheader">
+                    <img src="sprites/91.png" id="spr91">
+                    <div class="p-stats">
+                        <p class="p-name">CLOYSTER</p>
+                        <p class="p-species">BIVALVE</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  292.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When attacked, it launches its horns in quick volleys. Its innards have
+                    never been seen</p>
+            </div>
+            <div class="dexcard" id="p92">
+                <header class="dexheader">
+                    <img src="sprites/92.png" id="spr92">
+                    <div class="p-stats">
+                        <p class="p-name">GASTLY</p>
+                        <p class="p-species">GAS</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  0.2 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Almost invisible, this gaseous POKéMON cloaks the target and puts it to
+                    sleep without notice.</p>
+            </div>
+            <div class="dexcard" id="p93">
+                <header class="dexheader">
+                    <img src="sprites/93.png" id="spr93">
+                    <div class="p-stats">
+                        <p class="p-name">HAUNTER</p>
+                        <p class="p-species">GAS</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  0.2 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Because of its ability to slip through block walls, it is said to be
+                    from another dimension.</p>
+            </div>
+            <div class="dexcard" id="p94">
+                <header class="dexheader">
+                    <img src="sprites/94.png" id="spr94">
+                    <p>No. 94</p>
+                    <div class="p-stats">
+                        <p class="p-name">GENGAR</p>
+                        <p class="p-species">SHADOW</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  89.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Under a full moon, this POKEMON likes to mimic the shadows of people
+                    and laugh at their fright.</p>
+            </div>
+            <div class="dexcard" id="p95">
+                <header class="dexheader">
+                    <img src="sprites/95.png" id="spr95">
+                    <div class="p-stats">
+                        <p class="p-name">ONIX</p>
+                        <p class="p-species">ROCK SNAKE</p>
+                        <p class="p-height">HT  28'10"</p>
+                        <p class="p-weight">WT  463.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">As it grows, the stone portions of its body harden to become similar to
+                    a diamond, but colored black.</p>
+            </div>
+            <div class="dexcard" id="p96">
+                <header class="dexheader">
+                    <img src="sprites/96.png" id="spr96">
+                    <div class="p-stats">
+                        <p class="p-name">DROWZEE</p>
+                        <p class="p-species">HYPNOSIS</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  71.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Puts enemies to sleep then eats their dreams. Occasionally gets sick
+                    from eating bad dreams.</p>
+            </div>
+            <div class="dexcard" id="p97">
+                <header class="dexheader">
+                    <img src="sprites/97.png" id="spr97">
+                    <div class="p-stats">
+                        <p class="p-name">HYPNO</p>
+                        <p class="p-species">HYPNOSIS</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  167.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When it locks eyes with an enemy, it will use a mix of PSI moves
+                    such as HYPNOSIS and CONFUSION.</p>
+            </div>
+            <div class="dexcard" id="p98">
+                <header class="dexheader">
+                    <img src="sprites/98.png" id="spr98">
+                    <div class="p-stats">
+                        <p class="p-name">KRABBY</p>
+                        <p class="p-species">RIVER CRAB</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  14.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its pincers are not only powerful weapons, they are used for balance
+                    when walking sideways.</p>
+            </div>
+            <div class="dexcard" id="p99">
+                <header class="dexheader">
+                    <img src="sprites/99.png" id="spr99">
+                    <div class="p-stats">
+                        <p class="p-name">KINGLER</p>
+                        <p class="p-species">PINCER</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  132.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The large pincer has 10000 hp of crushing power. However, its huge size
+                    makes it unwieldy to use.</p>
+            </div>
+            <div class="dexcard" id="p100">
+                <header class="dexheader">
+                    <img src="sprites/100.png" id="spr100">
+                    <div class="p-stats">
+                        <p class="p-name">VOLTORB</p>
+                        <p class="p-species">BALL</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  23.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Usually found in power plants. Easily mistaken for a POKé BALL,
+                    they have zapped many people.</p>
+            </div>
+            <div class="dexcard" id="p101">
+                <header class="dexheader">
+                    <img src="sprites/101.png" id="spr101">
+                    <div class="p-stats">
+                        <p class="p-name">ELECTRODE</p>
+                        <p class="p-species">BALL</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  147.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It stores electric energy under very high pressure. It often explodes
+                    with little or no provocation.</p>
+            </div>
+            <div class="dexcard" id="p102">
+                <header class="dexheader">
+                    <img src="sprites/102.png" id="spr102">
+                    <div class="p-stats">
+                        <p class="p-name">EXEGGCUTE</p>
+                        <p class="p-species">EGG</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  6.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Often mistaken for eggs. When disturbed, they quickly gather and attack
+                    in swarms.</p>
+            </div>
+            <div class="dexcard" id="p103">
+                <header class="dexheader">
+                    <img src="sprites/103.png" id="spr103">
+                    <div class="p-stats">
+                        <p class="p-name">EXEGGUTOR</p>
+                        <p class="p-species">COCONUT</p>
+                        <p class="p-height">HT  6'07"</p>
+                        <p class="p-weight">WT  265.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Legend has it that on rare occasions, one of its heads will drop off
+                    and continue on as an EXEGGCUTE.</p>
+            </div>
+            <div class="dexcard" id="p104">
+                <header class="dexheader">
+                    <img src="sprites/104.png" id="spr104">
+                    <div class="p-stats">
+                        <p class="p-name">CUBONE</p>
+                        <p class="p-species">LONELY</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  14.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Because it never removes its skull helmet, no one has ever seen this
+                    POKéMON's read face.</p>
+            </div>
+            <div class="dexcard" id="p105">
+                <header class="dexheader">
+                    <img src="sprites/105.png" id="spr105">
+                    <div class="p-stats">
+                        <p class="p-name">MAROWAK</p>
+                        <p class="p-species">BONEKEEPER</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  99.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The bone it holds is its key weapon. It throws the bone skillfully like
+                    a boomerang to KO targets.</p>
+            </div>
+            <div class="dexcard" id="p106">
+                <header class="dexheader">
+                    <img src="sprites/106.png" id="spr106">
+                    <div class="p-stats">
+                        <p class="p-name">HITMONLEE</p>
+                        <p class="p-species">KICKING</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  110.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When in a hurry, its legs lengthen progressively. It runs smoothly with
+                    extra long, loping strides.</p>
+            </div>
+            <div class="dexcard" id="p107">
+                <header class="dexheader">
+                    <img src="sprites/107.png" id="spr107">
+                    <div class="p-stats">
+                        <p class="p-name">HITMONCHAN</p>
+                        <p class="p-species">PUNCHING</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  111.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">While apparently doing nothing, it fires punches in lightning fast
+                    volleys that are impossible to see.</p>
+            </div>
+            <div class="dexcard" id="p108">
+                <header class="dexheader">
+                    <img src="sprites/108.png" id="spr108">
+                    <div class="p-stats">
+                        <p class="p-name">LICKITUNG</p>
+                        <p class="p-species">LICKING</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  144.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its tongue can be extended like a chameleon's. It leaves a tingling
+                    sensation when it licks enemies.
+           </p>
+            </div>
+            <div class="dexcard" id="p109">
+                <header class="dexheader">
+                    <img src="sprites/109.png" id="spr109">
+                    <div class="p-stats">
+                        <p class="p-name">KOFFING</p>
+                        <p class="p-species">POISON GAS</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  2.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Because it stores several kinds of toxic gases in its body, it is prone
+                    to exploding without warning.</p>
+            </div>
+            <div class="dexcard" id="p110">
+                <header class="dexheader">
+                    <img src="sprites/110.png" id="spr110">
+                    <div class="p-stats">
+                        <p class="p-name">WEEZING</p>
+                        <p class="p-species">POISON GAS</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  21.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a
+                    WEEZING over many years.</p>
+            </div>
+            <div class="dexcard" id="p111">
+                <header class="dexheader">
+                    <img src="sprites/111.png" id="spr111">
+                    <div class="p-stats">
+                        <p class="p-name">RHYHORN</p>
+                        <p class="p-species">SPIKES</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  254.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its massive bones are 1000 times harder than human bones. It can easily
+                    knock a trailer flying.
+           </p>
+            </div>
+            <div class="dexcard" id="p112">
+                <header class="dexheader">
+                    <img src="sprites/112.png" id="spr112">
+                    <div class="p-stats">
+                        <p class="p-name">RHYDON</p>
+                        <p class="p-species">DRILL</p>
+                        <p class="p-height">HT  6'03"</p>
+                        <p class="p-weight">WT  265.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Protected by an armor-like hide, it is capable of living in molten lava
+                    of 3,600 degrees.</p>
+            </div>
+            <div class="dexcard" id="p113">
+                <header class="dexheader">
+                    <img src="sprites/113.png" id="spr113">
+                    <div class="p-stats">
+                        <p class="p-name">CHANSEY</p>
+                        <p class="p-species">EGG</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  76.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A rare and elusive POKéMON that is said to bring happiness to those who
+                    manage to get it.</p>
+            </div>
+            <div class="dexcard" id="p114">
+                <header class="dexheader">
+                    <img src="sprites/114.png" id="spr114">
+                    <div class="p-stats">
+                        <p class="p-name">TANGELA</p>
+                        <p class="p-species">VINE</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  77.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The whole body is swathed with wide vines that are similar to seaweed.
+                    Its vines shake as it walks.</p>
+            </div>
+            <div class="dexcard" id="p115">
+                <header class="dexheader">
+                    <img src="sprites/115.png" id="spr115">
+                    <div class="p-stats">
+                        <p class="p-name">KANGASHKHAN</p>
+                        <p class="p-species">PARENT</p>
+                        <p class="p-height">HT  7'03"</p>
+                        <p class="p-weight">WT  176.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">The infant rarely ventures out of its mother's protective pouch until
+                    it is 3 years old.</p>
+            </div>
+            <div class="dexcard" id="p116">
+                <header class="dexheader">
+                    <img src="sprites/116.png" id="spr116">
+                    <div class="p-stats">
+                        <p class="p-name">HORSEA</p>
+                        <p class="p-species">DRAGON</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  18.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Known to shoot down flying bugs with precision blasts of ink from the
+                    surface of the water.</p>
+            </div>
+            <div class="dexcard" id="p117">
+                <header class="dexheader">
+                    <img src="sprites/117.png" id="spr117">
+                    <div class="p-stats">
+                        <p class="p-name">SEADRA</p>
+                        <p class="p-species">DRAGON</p>
+                        <p class="p-height">HT  3'11"</p>
+                        <p class="p-weight">WT  55.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Capable of swimming backwards by rapidly flapping its wing-like
+                    pectoral fins and stout tail.</p>
+            </div>
+            <div class="dexcard" id="p118">
+                <header class="dexheader">
+                    <img src="sprites/118.png" id="spr118">
+                    <div class="p-stats">
+                        <p class="p-name">GOLDEEN</p>
+                        <p class="p-species">GOLDFISH</p>
+                        <p class="p-height">HT  2'00"</p>
+                        <p class="p-weight">WT  33.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its tail fin billows like an elegant ballroom dress, giving it the
+                    nickname of the Water Queen.
+           </p>
+            </div>
+            <div class="dexcard" id="p119">
+                <header class="dexheader">
+                    <img src="sprites/119.png" id="spr119">
+                    <div class="p-stats">
+                        <p class="p-name">SEAKING</p>
+                        <p class="p-species">GOLDFISH</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  86.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">In the autumn spawning season, they can be seen swimming powerfully up
+                    rivers and creeks.</p>
+            </div>
+            <div class="dexcard" id="p120">
+                <header class="dexheader">
+                    <img src="sprites/120.png" id="spr120">
+                    <div class="p-stats">
+                        <p class="p-name">STARYU</p>
+                        <p class="p-species">STARSHAPE</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  76.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">An enigmatic POKéMON that can effortlessly regenerate any appendage
+                    it loses in battle.</p>
+            </div>
+            <div class="dexcard" id="p121">
+                <header class="dexheader">
+                    <img src="sprites/121.png" id="spr121">
+                    <div class="p-stats">
+                        <p class="p-name">STARMIE</p>
+                        <p class="p-species">MYSTERIOUS</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  176.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its central core glows with the seven colors of the rainbow.
+                    Some people value the core as a gem.</p>
+            </div>
+            <div class="dexcard" id="p122">
+                <header class="dexheader">
+                    <img src="sprites/122.png" id="spr122">
+                    <div class="p-stats">
+                        <p class="p-name">MR.MIME</p>
+                        <p class="p-species">BARRIER</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  120.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">If interrupted while it is miming, it will slap around the offender
+                    with its broad hands.</p>
+            </div>
+            <div class="dexcard" id="p123">
+                <header class="dexheader">
+                    <img src="sprites/123.png" id="spr123">
+                    <div class="p-stats">
+                        <p class="p-name">SCYTHER</p>
+                        <p class="p-species">MANTIS</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  123.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">With ninja-like agility and speed, it can create the illusion that
+                    there is more than one.</p>
+            </div>
+            <div class="dexcard" id="p124">
+                <header class="dexheader">
+                    <img src="sprites/124.png" id="spr124">
+                    <div class="p-stats">
+                        <p class="p-name">JYNX</p>
+                        <p class="p-species">HUMANSHAPE</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  90.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It seductively wiggles its hips as it walks. It can cause people to
+                    dance in unison with it.</p>
+            </div>
+            <div class="dexcard" id="p125">
+                <header class="dexheader">
+                    <img src="sprites/125.png" id="spr125">
+                    <div class="p-stats">
+                        <p class="p-name">ELECTABUZZ</p>
+                        <p class="p-species">ELECTRIC</p>
+                        <p class="p-height">HT  3'07"</p>
+                        <p class="p-weight">WT  66.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Normally found near power plants, they can wander away and cause major
+                    blackouts in cities.</p>
+            </div>
+            <div class="dexcard" id="p126">
+                <header class="dexheader">
+                    <img src="sprites/126.png" id="spr126">
+                    <div class="p-stats">
+                        <p class="p-name">MAGMAR</p>
+                        <p class="p-species">SPITFIRE</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  98.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its body always burns with an orange glow that enables it to hide
+                    perfectly among flames.</p>
+            </div>
+            <div class="dexcard" id="p127">
+                <header class="dexheader">
+                    <img src="sprites/127.png" id="spr127">
+                    <div class="p-stats">
+                        <p class="p-name">PINSIR</p>
+                        <p class="p-species">STAGBEETLE</p>
+                        <p class="p-height">HT  4'11"</p>
+                        <p class="p-weight">WT  121.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">If it fails to crush the victim with its pincers, it will swing it
+                    around and toss it hard.</p>
+            </div>
+            <div class="dexcard" id="p128">
+                <header class="dexheader">
+                    <img src="sprites/128.png" id="spr128">
+                    <div class="p-stats">
+                        <p class="p-name">TAUROS</p>
+                        <p class="p-species">WILD BULL</p>
+                        <p class="p-height">HT  4'07"</p>
+                        <p class="p-weight">WT  195.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When it targets an enemy, it charges furiously while whipping its body
+                    with its long tails.</p>
+            </div>
+            <div class="dexcard" id="p129">
+                <header class="dexheader">
+                    <img src="sprites/129.png" id="spr129">
+                    <div class="p-stats">
+                        <p class="p-name">MAGIKARP</p>
+                        <p class="p-species">FISH</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  22.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">In the distant past, it was somewhat stronger than the horribly weak
+                    descendants that exist today.</p>
+            </div>
+            <div class="dexcard" id="p130">
+                <header class="dexheader">
+                    <img src="sprites/130.png" id="spr130">
+                    <div class="p-stats">
+                        <p class="p-name">GYARADOS</p>
+                        <p class="p-species">ATROCIOUS</p>
+                        <p class="p-height">HT  21'04"</p>
+                        <p class="p-weight">WT  518.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Rarely seen in the wild. Huge and vicious, it is capable of destroying
+                    entire cities in a rage.</p>
+            </div>
+            <div class="dexcard" id="p131">
+                <header class="dexheader">
+                    <img src="sprites/131.png" id="spr131">
+                    <div class="p-stats">
+                        <p class="p-name">LAPRAS</p>
+                        <p class="p-species">TRANSPORT</p>
+                        <p class="p-height">HT  8'02"</p>
+                        <p class="p-weight">WT  485.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A POKéMON that has been over-hunted almost to extinction. It can ferry
+                    people across the water.</p>
+            </div>
+            <div class="dexcard" id="p132">
+                <header class="dexheader">
+                    <img src="sprites/132.png" id="spr132">
+                    <div class="p-stats">
+                        <p class="p-name">DITTO</p>
+                        <p class="p-species">TRANSFORM</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  9.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Capable of copying an enemy's genetic code to instantly transform
+                    itself into a duplicate of the enemy.</p>
+            </div>
+            <div class="dexcard" id="p133">
+                <header class="dexheader">
+                    <img src="sprites/133.png" id="spr133">
+                    <div class="p-stats">
+                        <p class="p-name">EEVEE</p>
+                        <p class="p-species">EVOLUTION</p>
+                        <p class="p-height">HT  1'00"</p>
+                        <p class="p-weight">WT  14.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its genetic code is irregular. It may mutate if it is exposed to
+                    radiation from element STONEs.</p>
+            </div>
+            <div class="dexcard" id="p134">
+                <header class="dexheader">
+                    <img src="sprites/134.png" id="spr134">
+                    <div class="p-stats">
+                        <p class="p-name">VAPOREON</p>
+                        <p class="p-species">BUBBLE JET</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  64.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Lives close to water. Its long tail is ridged with a fin which is often
+                    mistaken for a mermaid's.
+           </p>
+            </div>
+            <div class="dexcard" id="p135">
+                <header class="dexheader">
+                    <img src="sprites/135.png" id="spr135">
+                    <div class="p-stats">
+                        <p class="p-name">JOLTEON</p>
+                        <p class="p-species">LIGHTNING</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  54.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It accumulates negative ions in the atmosphere to blast out 10000-volt
+                    lightning bolts.</p>
+            </div>
+            <div class="dexcard" id="p136">
+                <header class="dexheader">
+                    <img src="sprites/136.png" id="spr136">
+                    <div class="p-stats">
+                        <p class="p-name">FLAREON</p>
+                        <p class="p-species">FLAME</p>
+                        <p class="p-height">HT  2'11"</p>
+                        <p class="p-weight">WT  55.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">When storing thermal energy in its body, its temperature could soar to
+                    over 1600 degrees.</p>
+            </div>
+            <div class="dexcard" id="p137">
+                <header class="dexheader">
+                    <img src="sprites/137.png" id="spr137">
+                    <div class="p-stats">
+                        <p class="p-name">PORYGON</p>
+                        <p class="p-species">VIRTUAL</p>
+                        <p class="p-height">HT  2'07"</p>
+                        <p class="p-weight">WT  80.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A POKéMON that consists entirely of programming code. Capable of moving
+                    freely in cyberspace.</p>
+            </div>
+            <div class="dexcard" id="p138">
+                <header class="dexheader">
+                    <img src="sprites/138.png" id="spr138">
+                    <div class="p-stats">
+                        <p class="p-name">OMANYTE</p>
+                        <p class="p-species">SPIRAL</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  17.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Although long extinct, in rare cases, it can be genetically resurrected
+                    from fossils.</p>
+            </div>
+            <div class="dexcard" id="p139">
+                <header class="dexheader">
+                    <img src="sprites/139.png" id="spr139">
+                    <div class="p-stats">
+                        <p class="p-name">OMASTAR</p>
+                        <p class="p-species">SPIRAL</p>
+                        <p class="p-height">HT  3'03"</p>
+                        <p class="p-weight">WT  77.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A prehistoric POKéMON that died out when its heavy shell made it
+                    impossible to catch prey.</p>
+            </div>
+            <div class="dexcard" id="p140">
+                <header class="dexheader">
+                    <img src="sprites/140.png" id="spr140">
+                    <div class="p-stats">
+                        <p class="p-name">KABUTO</p>
+                        <p class="p-species">SHELLFISH</p>
+                        <p class="p-height">HT  1'08"</p>
+                        <p class="p-weight">WT  25.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A POKéMON that was resurrected from a fossil found in what was once the
+                    ocean floor eons ago.</p>
+            </div>
+            <div class="dexcard" id="p141">
+                <header class="dexheader">
+                    <img src="sprites/141.png" id="spr141">
+                    <div class="p-stats">
+                        <p class="p-name">KABUTOPS</p>
+                        <p class="p-species">SHELLFISH</p>
+                        <p class="p-height">HT  4'03"</p>
+                        <p class="p-weight">WT  89.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Its sleek shape is perfect for swimming. It slashes prey with its claws
+
+                    and drains the body fluids.</p>
+            </div>
+            <div class="dexcard" id="p142">
+                <header class="dexheader">
+                    <img src="sprites/142.png" id="spr142">
+                    <div class="p-stats">
+                        <p class="p-name">AERODACTYL</p>
+                        <p class="p-species">FOSSIL</p>
+                        <p class="p-height">HT  5'11"</p>
+                        <p class="p-weight">WT  130.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A ferocious, prehistoric POKéMON that goes for the enemy's throat with
+                    its serrated saw-like fangs.</p>
+            </div>
+            <div class="dexcard" id="p143">
+                <header class="dexheader">
+                    <img src="sprites/143.png" id="spr143">
+                    <div class="p-stats">
+                        <p class="p-name">SNORLAX</p>
+                        <p class="p-species">SLEEPING</p>
+                        <p class="p-height">HT  6'11"</p>
+                        <p class="p-weight">WT  1014.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes
+                    steadily more slothful.</p>
+            </div>
+            <div class="dexcard" id="p144">
+                <header class="dexheader">
+                    <img src="sprites/144.png" id="spr144">
+                    <div class="p-stats">
+                        <p class="p-name">ARTICUNO</p>
+                        <p class="p-species">FREEZE</p>
+                        <p class="p-height">HT  5'07"</p>
+                        <p class="p-weight">WT  122.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A legendary bird POKéMON that is said to appear to doomed people who
+                    are lost in icy mountains.</p>
+            </div>
+            <div class="dexcard" id="p145">
+                <header class="dexheader">
+                    <img src="sprites/145.png" id="spr145">
+                    <div class="p-stats">
+                        <p class="p-name">ZAPDOS</p>
+                        <p class="p-species">ELECTRIC</p>
+                        <p class="p-height">HT  5'03"</p>
+                        <p class="p-weight">WT  116.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A legendary bird POKéMON that is said to appear from clouds while
+                    dropping enormous lightning bolts.</p>
+            </div>
+            <div class="dexcard" id="p146">
+                <header class="dexheader">
+                    <img src="sprites/146.png" id="spr146">
+                    <div class="p-stats">
+                        <p class="p-name">MOLTRES</p>
+                        <p class="p-species">FLAME</p>
+                        <p class="p-height">HT  6'07"</p>
+                        <p class="p-weight">WT  132.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Known as the legendary bird of fire. Every flap of its wings creates
+                    a dazzling flash of flames.</p>
+            </div>
+            <div class="dexcard" id="p147">
+                <header class="dexheader">
+                    <img src="sprites/147.png" id="spr147">
+                    <div class="p-stats">
+                        <p class="p-name">DRATINI</p>
+                        <p class="p-species">DRAGON</p>
+                        <p class="p-height">HT  5'11"</p>
+                        <p class="p-weight">WT  7.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">Long considered a mythical POKéMON until recently when a small colony
+                    was found living underwater.</p>
+            </div>
+            <div class="dexcard" id="p148">
+                <header class="dexheader">
+                    <img src="sprites/148.png" id="spr148">
+                    <div class="p-stats">
+                        <p class="p-name">DRAGONAIR</p>
+                        <p class="p-species">DRAGON</p>
+                        <p class="p-height">HT  13'01"</p>
+                        <p class="p-weight">WT  36.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">A mystical POKéMON that exudes a gentle aura. Has the ability to change
+                    climate conditions.</p>
+            </div>
+            <div class="dexcard" id="p149">
+                <header class="dexheader">
+                    <img src="sprites/149.png" id="spr149">
+                    <div class="p-stats">
+                        <p class="p-name">DRAGONITE</p>
+                        <p class="p-species">DRAGON</p>
+                        <p class="p-height">HT  7'03"</p>
+                        <p class="p-weight">WT  463.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">An extremely rarely seen marine POKéMON. Its intelligence is said to
+                    match that of humans.
+           </p>
+            </div>
+            <div class="dexcard" id="p150">
+                <header class="dexheader">
+                    <img src="sprites/150.png" id="spr150">
+                    <div class="p-stats">
+                        <p class="p-name">MEWTWO</p>
+                        <p class="p-species">GENETIC</p>
+                        <p class="p-height">HT  6'07"</p>
+                        <p class="p-weight">WT  269.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">It was created by a scientist after years of horrific gene splicing and
+                    DNA engineering experiments.</p>
+            </div>
+            <div class="dexcard" id="p151">
+                <header class="dexheader">
+                    <img src="sprites/151.png" id="spr151">
+                    <div class="p-stats">
+                        <p class="p-name">MEW</p>
+                        <p class="p-species">NEW SPECIE</p>
+                        <p class="p-height">HT  1'04"</p>
+                        <p class="p-weight">WT  9.0 lb</p>
+                    </div>
+                </header>
+                <p class="p-dexentry">So rare that it is still said to be a mirage by many experts.
+                    Only a few people have seen it worldwide.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h1>POKÉDEX</h1>
+                <p>Made in 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    image-rendering: crisp-edges;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border:5px solid #ffffff;
+
+}
+
+.btn:hover{
+    border:5px solid #c78888;
+    color: #ffffff;
+}
+
+.btn:active{
+    border:5px solid #c78888;
+    color: #ffffff;
+    background-color: #c78888;
+}
+
+.btn img{
+    border: 5px solid #ffffff;
+    padding:5px 5px;
+}
+
+header{
+    background-color: #c78888;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header input{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+body{
+    background: linear-gradient(to right, #c78888, #5a9bf0);
+}   
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:15px;
+}
+
+.container:last-child{
+    display: flex;
+    align-self: center;
+}
+
+.dexcard{
+    position:fixed;
+    top:50%;
+    left:50%;
+    width: 500px;
+    height: auto;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #c78888;
+    box-shadow:rgba(17, 12, 46 0.15) 0px 48px 100px 0px;
+    border-radius:15px;
+    border:1px solid #000000;
+    opacity:0;
+    z-index:100;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dexcard.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity:1;
+}
+
+.dexcard .dexheader{
+    display:flex;
+    justify-content: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.dexcard img{
+    image-rendering: crisp-edges;
+    height:100%;
+    width: 40%;
+    transform:scaleX(-1);
+    margin-left:10px;
+    margin-top:10px;
+    border:5px solid #ffffff;
+    border-radius:15px;
+    background-color: #ffffff;
+}
+
+.dexcard .p-stats{
+    font-size: x-large;
+    margin-left:15px;
+    padding-right:40px;
+    padding-top:25px;
+    line-height: 1.5;
+}
+.dexcard .pname{
+    font-size: 1.5rem;
+    font-weight: italic;
+    margin-top: 5px;
+}
+
+.dexcard .p-dexentry{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    padding:10px;
+    background-color: #ffffffc2;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+}
+
+footer{
+    background-color: #c78888;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #000000;
+    margin-top: 20px;
+}
