@@ -12,7 +12,8 @@
     background-color: #ffffff;
     border-radius: 10px;
     border:5px solid #ffffff;
-
+    height:15%;
+    width:15%;
 }
 
 .btn:hover{
@@ -28,7 +29,10 @@
 
 .btn img{
     border: 5px solid #ffffff;
+    border-radius: 10px;
     padding:5px 5px;
+    height: auto;
+    width: 100%;
 }
 
 header{
@@ -61,10 +65,12 @@ body{
 
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin:auto;
     margin-top: 20px;
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(6, 1fr); */
     gap:15px;
 }
 
@@ -145,4 +151,21 @@ footer{
     text-align: center;
     border-top: 1px solid #000000;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        height: auto;
+    }
+
+    .dexcard {
+        width: 90%;
+    }
 }
