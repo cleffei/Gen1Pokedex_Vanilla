@@ -86,7 +86,7 @@ body{
     width: 500px;
     height: auto;
     transform: translate(-50%, -50%) scale(0);
-    background-color: #c78888;
+    /* background-color: #fec8d8; */
     box-shadow:rgba(17, 12, 46 0.15) 0px 48px 100px 0px;
     border-radius:15px;
     border:1px solid #000000;
@@ -135,9 +135,11 @@ body{
 .dexcard .p-dexentry{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     padding:10px;
-    background-color: #ffffffc2;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #d6c2c2;
     border-bottom-right-radius:15px;
     border-bottom-left-radius:15px;
 }
