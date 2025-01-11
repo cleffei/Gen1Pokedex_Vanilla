@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:PixelCode;
+}
+
+@font-face {
+    font-family: PixelCode;
+    src: url(/fonts/PixelCode.ttf);
+}
+
+@font-face {
+    font-family: PixelCode-ExtraBold;
+    src: url(/fonts/PixelCode-ExtraBold.ttf);
 }
 
 .btn{
@@ -35,14 +46,21 @@
     width: 100%;
 }
 
-header{
+.nav-header{
     background-color: #c78888;
     display: flex;
     justify-content: space-between;
+    position:fixed;
+    width:100%;
+    top:0;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #000000;
+}
+
+.nav-header input:focus{
+    outline: 1px solid #a5d684;
 }
 
 header h1{
@@ -57,6 +75,8 @@ header input{
     border-radius: 10px;
     border: none;
     margin-right: 10px;
+    text-indent: 15px;
+    background-color: antiquewhite;
 }
 
 body{
@@ -66,7 +86,7 @@ body{
 .container{
     width: 80%;
     margin:auto;
-    margin-top: 20px;
+    margin-top: 70px;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -80,6 +100,7 @@ body{
 }
 
 .dexcard{
+    font-family:PixelCode;
     position:fixed;
     top:50%;
     left:50%;
@@ -89,7 +110,7 @@ body{
     /* background-color: #fec8d8; */
     box-shadow:rgba(17, 12, 46 0.15) 0px 48px 100px 0px;
     border-radius:15px;
-    border:1px solid #000000;
+    border:3px solid #000000;
     opacity:0;
     z-index:100;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -101,10 +122,13 @@ body{
 }
 
 .dexcard .dexheader{
+    background-color: #c78888;
+    padding:10px 0;
     display:flex;
     justify-content: space-between;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom: 5px solid #000000;
 }
 
 .dexcard img{
@@ -120,21 +144,23 @@ body{
 }
 
 .dexcard .p-stats{
+    font-family: PixelCode-ExtraBold;
+    color:#000000;
     font-size: x-large;
     margin-left:15px;
     padding-right:40px;
-    padding-top:25px;
-    line-height: 1.5;
+    padding-top:10px;
+    line-height: 2;
 }
 .dexcard .pname{
     font-size: 1.5rem;
-    font-weight: italic;
+    /* font-weight: italic; */
     margin-top: 5px;
 }
 
 .dexcard .p-dexentry{
     font-size: 1.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* margin-top: 5px; */
     padding:10px;
     padding-top:20px;
@@ -142,6 +168,15 @@ body{
     background-color: #d6c2c2;
     border-bottom-right-radius:15px;
     border-bottom-left-radius:15px;
+    border-top: 5px dashed #000000;
+}
+
+.dexcard #p1 .p-stats, .dexcard #p2 .p-stats, .dexcard #p3 .p-stats, .dexcard #p10 .p-stats, .dexcard #p11 .p-stats, .dexcard #p43 .p-stats, .dexcard #p69 .p-stats, .dexcard #p70 .p-stats, .dexcard #p71 .p-stats, .dexcard #p103 .p-stats, .dexcard #p123 .p-stats {
+    background-color: #4aa55a;
+}
+
+.dexcard #p1 .p-dexentry, .dexcard #p2 .p-dexentry, .dexcard #p3 .p-dexentry, .dexcard #p10 .p-dexentry, .dexcard #p11 .p-dexentry, .dexcard #p43 .p-dexentry, .dexcard #p69 .p-dexentry, .dexcard #p70 .p-dexentry, .dexcard #p71 .p-dexentry, .dexcard #p103 .p-dexentry, .dexcard #p123 .p-dexentry {
+    background-color: #a5d684;
 }
 
 footer{
@@ -150,13 +185,35 @@ footer{
     justify-content: center;
     color: #ffffff;
     padding: 10px 0;
+    bottom:0;
     text-align: center;
     border-top: 1px solid #000000;
     margin-top: 20px;
 }
 
 @media (max-width: 768px) {
+    .nav-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header h1{
+        font-size:1.5rem;
+    }
+
+    .nav-header input{
+        width: 80%;
+    }
+
+    .bav-header .form-control{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+
     .container {
+        margin-top:100px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -168,6 +225,6 @@ footer{
     }
 
     .dexcard {
-        width: 90%;
+        width: 90%; 
     }
 }
